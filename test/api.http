@@ -1,0 +1,24 @@
+POST http://localhost:8080/albums HTTP/1.1
+content-type: application/json
+
+{
+   "ID":"5",
+   "Title":"album1",
+   "Artist":"ravi",
+   "Price":"100"
+}
+###
+
+GET http://localhost:8080/albums HTTP/1.1
+content-type: application/json
+
+{
+   "ID":"4",
+   "Title":"album1",
+   "Artist":"ravi",
+   "Price":"100"
+}
+
+###
+
+GET http://localhost:8080/albums/1 HTTP/1.1
